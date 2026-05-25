@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Sagar Pimparkar — Cloud Solution Architect specializing in multi-cloud architecture, DevOps, security, and enterprise-scale migrations." />
-  <title>Sagar Pimparkar | Cloud Solution Architect / Senior Platform Owner - Cloud & AI</title>
+  <title>Sagar Pimparkar | Cloud Solution Architect</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -14,7 +14,7 @@
       --bg-secondary: #111827;
       --bg-card: #1a2332;
       --bg-card-hover: #1f2a3d;
-      --border: rgba(148, 163, 184, 0.12);
+      --border: rgba(148, 163, 184, 0.12);  
       --border-hover: rgba(56, 189, 248, 0.35);
       --text-primary: #f1f5f9;
       --text-secondary: #94a3b8;
@@ -575,25 +575,34 @@
     }
 
     .project-card__header {
-      padding: 1.75rem 1.75rem 0;
+      padding: 1.5rem 1.5rem 0;
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
-      gap: 1rem;
+      gap: 0.75rem;
+      min-height: 80px;
     }
 
-    .project-card__tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .project-card__tags { 
+      display: flex; 
+      flex-wrap: nowrap; 
+      gap: 0.4rem;
+      flex: 1;
+      align-items: center;
+      overflow: hidden;
+    }
 
     .project-card__tag {
-      padding: 4px 10px;
+      padding: 3px 9px;
       background: rgba(34, 211, 238, 0.08);
       border: 1px solid rgba(34, 211, 238, 0.15);
       border-radius: 999px;
-      font-size: 0.6875rem;
+      font-size: 0.625rem;
       font-weight: 600;
       color: var(--accent-cyan);
       text-transform: uppercase;
-      letter-spacing: 0.04em;
+      letter-spacing: 0.03em;
+      white-space: nowrap;
     }
 
     .project-card__icon {
@@ -607,7 +616,7 @@
       flex-shrink: 0;
     }
 
-    .project-card__body { padding: 1.25rem 1.75rem 1.75rem; flex: 1; }
+    .project-card__body { padding: 1.25rem 1.5rem 1.5rem; flex: 1; }
 
     .project-card__title {
       font-size: 1.25rem;
@@ -752,6 +761,44 @@
         transition-duration: 0.01ms !important;
       }
     }
+
+    .project-card__tech {
+      margin-top: 1.25rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .project-card__tech-label {
+      font-size: 0.6875rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 0.625rem;
+    }
+
+    .project-card__tech-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+
+    .project-card__tech-pill {
+      padding: 3px 10px;
+      background: rgba(99, 102, 241, 0.08);
+      border: 1px solid rgba(99, 102, 241, 0.2);
+      border-radius: 999px;
+      font-size: 0.6875rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      white-space: nowrap;
+      transition: background var(--transition), color var(--transition);
+    }
+
+    .project-card__tech-pill:hover {
+      background: rgba(99, 102, 241, 0.15);
+      color: var(--accent-indigo);
+    }
   </style>
 </head>
 <body>
@@ -788,7 +835,7 @@
             <span class="hero__badge-dot" aria-hidden="true"></span>
             Available for consulting &amp; architecture engagements
           </div>
-          <h1 id="hero-title" class="hero__title">Cloud Solution <span>Architect</span></h1>
+          <h1 id="hero-title" class="hero__title">Cloud Solution Architect <span>/ Senior Platform Owner - Cloud & AI</span></h1> 
           <p class="hero__summary">I design and deliver secure, scalable multi-cloud architectures that accelerate digital transformation. With 12+ years across infrastructure, DevOps, and enterprise cloud programs, I bridge business strategy with production-ready engineering.</p>
           <div class="hero__actions">
             <a href="#projects" class="btn btn--primary">View Projects</a>
@@ -882,7 +929,7 @@
                 <span class="tech__skill" role="listitem">API Gateway</span>
                 <span class="tech__skill" role="listitem">Load Balancing</span>
                 <span class="tech__skill" role="listitem">Disaster Recovery</span>
-              </div>
+               </div>
             </div>
             <div class="tech__certs">
               <h3>Certifications</h3>
@@ -912,11 +959,11 @@
         <div class="projects__grid">
           <article class="project-card">
             <div class="project-card__header">
-              <div class="project-card__tags"><span class="project-card__tag">Banking</span><span class="project-card__tag">Multi-Cloud AI</span><span class="project-card__tag">AWS &amp; Azure</span></div>
+              
               <div class="project-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 0 0-2.455 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z"/></svg>
             </div>
             <div class="project-card__body">
-              <h3 class="project-card__title">Enterprise AI &amp; Multi-Cloud Platform — MENAT Banking</h3>
+              <h3 class="project-card__title">Enterprise AI &amp; Multi-Cloud Platform — Banking</h3>
               <div class="project-card__section"><div class="project-card__section-label">Challenge</div><p>MENAT&#8217;s largest bank needed to adopt generative AI across development and production without compromising regulatory compliance, data security, auditability, or cost control across AWS and Azure estates.</p></div>
               <div class="project-card__section"><div class="project-card__section-label">Cloud Design &amp; Implementation</div><p>Led design of an enterprise AI framework for governed consumption of AWS Bedrock, Azure AI Hub, and OpenAI models. Delivered a platform-as-a-product model with self-service provisioning, hybrid landing zones integrated with on-prem banking systems, cloud-native SDLC (microservices, GitOps, CI/CD), and automation at scale using Terraform, Jenkins, ArgoCD, and OpenShift across 30+ clusters in 8+ environments. Enforced AI governance, AWS Control Tower guardrails, and Azure Policy for cost optimization, fraud detection, and predictive analytics on OpenShift AI and Azure Cognitive Services.</p></div>
               <div class="project-card__section"><div class="project-card__section-label">Outcome</div><p>Established a centralized, audit-ready AI and cloud platform enabling secure multi-model access, faster compliant provisioning for product teams, and measurable governance and cost improvements across regulated banking workloads.</p></div>
@@ -925,11 +972,27 @@
                 <div class="project-card__metric"><div class="project-card__metric-value">8+</div><div class="project-card__metric-label">Environments</div></div>
                 <div class="project-card__metric"><div class="project-card__metric-value">Multi</div><div class="project-card__metric-label">Cloud AI</div></div>
               </div>
+              <div class="project-card__tech">
+                <div class="project-card__tech-label">Tech Stack</div>
+                <div class="project-card__tech-pills">
+                  <span class="project-card__tech-pill">AWS Bedrock</span>
+                  <span class="project-card__tech-pill">Azure AI Hub</span>
+                  <span class="project-card__tech-pill">OpenAI</span>
+                  <span class="project-card__tech-pill">OpenShift</span>
+                  <span class="project-card__tech-pill">Terraform</span>
+                  <span class="project-card__tech-pill">Jenkins</span>
+                  <span class="project-card__tech-pill">ArgoCD</span>
+                  <span class="project-card__tech-pill">Kubernetes</span>
+                  <span class="project-card__tech-pill">GitOps</span>
+                  <span class="project-card__tech-pill">AWS Control Tower</span>
+                  <span class="project-card__tech-pill">Azure Policy</span>
+                </div>
+              </div>
             </div>
           </article>
           <article class="project-card">
             <div class="project-card__header">
-              <div class="project-card__tags"><span class="project-card__tag">Banking</span><span class="project-card__tag">AWS</span><span class="project-card__tag">Kubernetes</span></div>
+              
               <div class="project-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z"/></svg></div>
             </div>
             <div class="project-card__body">
@@ -942,11 +1005,29 @@
                 <div class="project-card__metric"><div class="project-card__metric-value">1,400+</div><div class="project-card__metric-label">Daily Builds</div></div>
                 <div class="project-card__metric"><div class="project-card__metric-value">0</div><div class="project-card__metric-label">Downtime Migration</div></div>
               </div>
+              <div class="project-card__tech">
+                <div class="project-card__tech-label">Tech Stack</div>
+                <div class="project-card__tech-pills">
+                  <span class="project-card__tech-pill">AWS EKS</span>
+                  <span class="project-card__tech-pill">Kubernetes</span>
+                  <span class="project-card__tech-pill">Helm</span>
+                  <span class="project-card__tech-pill">Jenkins</span>
+                  <span class="project-card__tech-pill">Terraform</span>
+                  <span class="project-card__tech-pill">Istio</span>
+                  <span class="project-card__tech-pill">Kafka (MSK)</span>
+                  <span class="project-card__tech-pill">MongoDB</span>
+                  <span class="project-card__tech-pill">HashiCorp Vault</span>
+                  <span class="project-card__tech-pill">Consul</span>
+                  <span class="project-card__tech-pill">Prometheus</span>
+                  <span class="project-card__tech-pill">Grafana</span>
+                  <span class="project-card__tech-pill">Jaeger</span>
+                </div>
+              </div>
             </div>
           </article>
           <article class="project-card">
             <div class="project-card__header">
-              <div class="project-card__tags"><span class="project-card__tag">Insurance</span><span class="project-card__tag">Azure</span><span class="project-card__tag">DevOps</span></div>
+              
               <div class="project-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"/></svg></div>
             </div>
             <div class="project-card__body">
@@ -958,6 +1039,22 @@
                 <div class="project-card__metric"><div class="project-card__metric-value">5</div><div class="project-card__metric-label">Azure Subscriptions</div></div>
                 <div class="project-card__metric"><div class="project-card__metric-value">APIM</div><div class="project-card__metric-label">API Governance</div></div>
                 <div class="project-card__metric"><div class="project-card__metric-value">100%</div><div class="project-card__metric-label">Audit Logging</div></div>
+              </div>
+              <div class="project-card__tech">
+                <div class="project-card__tech-label">Tech Stack</div>
+                <div class="project-card__tech-pills">
+                  <span class="project-card__tech-pill">Azure DevOps</span>
+                  <span class="project-card__tech-pill">ARM Templates</span>
+                  <span class="project-card__tech-pill">PowerShell</span>
+                  <span class="project-card__tech-pill">Azure API Management</span>
+                  <span class="project-card__tech-pill">App Gateway WAF</span>
+                  <span class="project-card__tech-pill">Key Vault</span>
+                  <span class="project-card__tech-pill">Azure SQL</span>
+                  <span class="project-card__tech-pill">Data Factory</span>
+                  <span class="project-card__tech-pill">Event Hub</span>
+                  <span class="project-card__tech-pill">Logic Apps</span>
+                  <span class="project-card__tech-pill">Function Apps</span>
+                </div>
               </div>
             </div>
           </article>
